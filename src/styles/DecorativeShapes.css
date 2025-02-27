@@ -1,0 +1,184 @@
+.decorative-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.6;
+  transition: opacity 0.5s ease;
+}
+
+/* 丝带装饰 */
+.shape.ribbon-1 {
+  top: 20%;
+  left: 12%;
+  width: 200px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape.ribbon-2 {
+  top: 45%;
+  right: 15%;
+  width: 180px;
+  animation: float 7s ease-in-out infinite;
+}
+
+.shape.ribbon-3 {
+  display: none;
+}
+
+/* 圆形装饰 */
+.shape.circle-1 {
+  top: 25%;
+  right: 20%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--pink), var(--purple));
+  animation: float 8s ease-in-out infinite;
+}
+
+.shape.circle-2 {
+  top: 50%;
+  left: 25%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--orange), var(--yellow));
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape.circle-3 {
+  display: none;
+}
+
+.shape.circle-small-1, .shape.circle-small-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--purple);
+  opacity: 0.3;
+}
+
+.shape.circle-small-1 {
+  top: 35%;
+  left: 40%;
+  animation: float 4s ease-in-out infinite;
+}
+
+.shape.circle-small-2 {
+  top: 55%;
+  right: 35%;
+  animation: float 5s ease-in-out infinite;
+}
+
+/* 三角形装饰 */
+.shape.triangle-1 {
+  top: 30%;
+  left: 22%;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 60.6px solid var(--mint);
+  animation: float 7s ease-in-out infinite;
+}
+
+.shape.triangle-2, .shape.triangle-3 {
+  display: none;
+}
+
+/* 方形装饰 */
+.shape.square-1 {
+  top: 28%;
+  right: 28%;
+  width: 50px;
+  height: 50px;
+  background: var(--yellow);
+  transform: rotate(45deg);
+  animation: float 5s ease-in-out infinite;
+}
+
+.shape.square-2 {
+  top: 45%;
+  left: 32%;
+  width: 40px;
+  height: 40px;
+  background: var(--mint);
+  transform: rotate(30deg);
+  animation: float 8s ease-in-out infinite;
+}
+
+/* 点状装饰 */
+.shape.dot-group-1, .shape.dot-group-2 {
+  display: flex;
+  gap: 8px;
+}
+
+.shape.dot-group-1 span, .shape.dot-group-2 span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--purple);
+  opacity: 0.4;
+}
+
+.shape.dot-group-1 {
+  top: 40%;
+  left: 55%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.shape.dot-group-2 {
+  display: none;
+}
+
+/* 波浪线装饰 */
+.shape.wave-1 {
+  top: 60%;
+  left: 18%;
+  width: 120px;
+  opacity: 0.4;
+  animation: float 9s ease-in-out infinite;
+}
+
+/* 滚动时的淡出效果 */
+@media (min-width: 768px) {
+  .decorative-shapes {
+    height: 80vh;
+    mask-image: linear-gradient(to bottom, 
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,1) 70%,
+      rgba(0,0,0,0) 100%
+    );
+    -webkit-mask-image: linear-gradient(to bottom, 
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,1) 70%,
+      rgba(0,0,0,0) 100%
+    );
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+} 
