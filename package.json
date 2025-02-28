@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://theozhang.xyz",
   "private": true,
+  "homepage": "https://theozhang.xyz",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
