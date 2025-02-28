@@ -25,10 +25,10 @@ const ContactPage = ({ isOpen, onClose }) => {
               <h3>Phone</h3>
               <p>+86 18676693368</p>
             </div>
-            <div className="info-item clickable" onClick={() => window.location.href = 'mailto:theozhang722@gmail.com'}>
+            <div className="info-item clickable" onClick={() => window.location.href = 'mailto:connect@theozhang.xyz'}>
               <div className="info-icon">📧</div>
               <h3>Email</h3>
-              <p>theozhang722@gmail.com</p>
+              <p>connect@theozhang.xyz</p>
             </div>
             <div className="info-item clickable" onClick={() => window.open('https://www.google.com/maps/search/?api=1&query=Shenzhen,CN', '_blank')}>
               <div className="info-icon">📍</div>
@@ -58,7 +58,7 @@ const ContactPage = ({ isOpen, onClose }) => {
               <span className="icon">👥</span>
               Facebook
             </a>
-            <a href="https://www.linkedin.com/in/xinyang-zhang-a94a2b2a9/" target="_blank" rel="noopener noreferrer" className="social-button whatsapp">
+            <a href="https://www.linkedin.com/in/xinyang-zhang-a94a2b2a9/" target="_blank" rel="noopener noreferrer" className="social-button linkedin">
               <span className="icon">🧑‍💻</span>
               LinkedIn
             </a>

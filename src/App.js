@@ -142,10 +142,11 @@ function App() {
             onClick: () => window.open('https://caloogy.top', '_blank')
           },
           {
-            title: 'Blog',
-            description: 'To be released soon...',
-            buttonText: 'Plzzz wait 🤫',
-            color: 'orange'
+            title: 'Robot Club',
+            description: 'To be immersed in the world of robotics🦾',
+            buttonText: 'Learn More',
+            color: 'orange',
+            onClick: () => window.open('https://itsmyspace.xyz/robot_dimension', '_blank')
           },
           {
             title: 'Photography',
